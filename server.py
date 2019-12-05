@@ -8,7 +8,7 @@ Wanna buy some KIPODIM?
 First, I have to make sure you're allowed to.
 Please log in with you password: """
 
-FLAG = 'kaf{D05_15_JU57_700_C00L}'
+FLAG = 'KAF{D05_15_JU57_700_C00L}'
 INVALID = 'Man this is not the right password :('
 
 s = socket(AF_INET, SOCK_STREAM)
