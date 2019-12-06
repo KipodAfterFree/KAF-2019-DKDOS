@@ -13,7 +13,7 @@ INVALID = 'Man this is not the right password :('
 
 s = socket(AF_INET, SOCK_STREAM)
 s.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
-s.bind(('localhost', 8000))
+s.bind(('0.0.0.0', 8000))
 
 threads = []
 

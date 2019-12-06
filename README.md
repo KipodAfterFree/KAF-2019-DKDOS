@@ -24,12 +24,12 @@ In the second part, the solvers should find another password that hashes to 0x43
 
 [Clone](https://github.com/omerk2511/KAF-2019-DKDOS/archive/master.zip) the repository, then type the following command to build the container:
 ```bash
-docker build . -t DKDOS
+docker build . -t dkdos
 ```
 
 To run the challenge, execute the following command:
 ```bash
-docker run --rm -d -p 8000:80 DKDOS
+docker run --rm -d -p 5000:8000 dkdos
 ```
 
 ## Usage
