@@ -1,6 +1,6 @@
 # DKDOS
 
-DKDOS is an information security challenge in the reversing category, and was presented to participants of [KAF CTF 2019](https://ctf.kipodafterfree.com)
+DKDOS is an information security challenge in the reversing category, and was presented to participants of [KAF CTF 2019](https://play.kaf.sh)
 
 ## Challenge story
 
