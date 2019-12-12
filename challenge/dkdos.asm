@@ -33,7 +33,7 @@ HashLoop:
 
     push bx
         mov bx, hashAdress
-        shr [word ptr bx], 1
+        shr [word ptr bx], 2
         sub [word ptr bx], ax
     pop bx
 
@@ -57,7 +57,7 @@ proc DisplayMessage
 endp DisplayMessage
 
 proc GetPassword
-    mov [word ptr cs:13h], 0701h
+    mov [word ptr cs:15h], 0701h
 
     lea dx, [password]
     mov ah, 0Ah
@@ -69,17 +69,17 @@ endp GetPassword
 proc Branch
     pop ax
 
-    lea bx, [cs:071h]
+    lea bx, [cs:07Ah]
     cmp ax, bx
 
     je InvalidPassword
 
-    lea bx, [cs:097h]
+    lea bx, [cs:0A0h]
     cmp ax, bx
 
     je ValidPassword
 
-    lea bx, [cs:0A1h]
+    lea bx, [cs:0AAh]
     cmp ax, bx
 
     je Exit
@@ -94,6 +94,7 @@ Start:
     call DisplayMessage
     
     mov [word ptr cs:11h], 027D1h
+    mov [word ptr cs:13h], 027D1h
 
     call GetPassword
 
@@ -127,7 +128,7 @@ CallHashPassword:
     add sp, 6
 
 VerifyPassword:
-    cmp [word ptr hash], 43E5h
+    cmp [word ptr hash], 0CFE1h
     jne InvalidPassword
 
     call Branch ; Here -> valid

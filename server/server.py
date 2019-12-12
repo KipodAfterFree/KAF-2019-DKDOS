@@ -26,7 +26,7 @@ def hash(password):
     calculated_hash = 0
 
     for char in password:
-        calculated_hash = ((calculated_hash << 1) + ord(char)) & 0xffff
+        calculated_hash = ((calculated_hash << 2) + ord(char)) & 0xffff
 
     return calculated_hash
 
