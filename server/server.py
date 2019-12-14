@@ -42,7 +42,7 @@ class ClientHandler(Thread):
 
         password = self.socket.recv(4096).replace('\n', '')
 
-        if hash(password) == 0x43e5:
+        if hash(password) == 0xcfe1:
             self.socket.send('\n' + FLAG)
         else:
             self.socket.send('\n' + INVALID)
