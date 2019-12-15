@@ -29,7 +29,7 @@ docker build . -t dkdos
 
 To run the challenge, execute the following command:
 ```bash
-docker run --rm -d -p 5000:8000 dkdos
+docker run --rm -d -p 6000:8000 dkdos
 ```
 
 ## Usage

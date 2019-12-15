@@ -12,7 +12,7 @@ DATASEG
     hash dw 0
 
     validPass db 10, 13, 10, 13, 'Congrats! You are allowed to buy some KIPODIM!', 10, 13
-              db 'You can do it with `nc ctf.kaf.sh 5000`', 10, 13, '$'
+              db 'You can do it with `nc ctf.kaf.sh 6000`', 10, 13, '$'
     invalidPass db 10, 13, 'No KIPODIM today :|', 10, 13, '$'
 
 CODESEG
