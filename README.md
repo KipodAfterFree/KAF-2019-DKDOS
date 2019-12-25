@@ -22,7 +22,7 @@ In the second part, the solvers should find another password that hashes to 0x43
 
 ## Building and installing
 
-[Clone](https://github.com/omerk2511/KAF-2019-DKDOS/archive/master.zip) the repository, then type the following command to build the container:
+[Clone](https://github.com/KipodAfterFree/KAF-2019-DKDOS/archive/master.zip) the repository, then type the following command to build the container:
 ```bash
 docker build . -t dkdos
 ```
